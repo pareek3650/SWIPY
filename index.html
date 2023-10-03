@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- slick  -->
+
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+
+    <!-- slick end  -->
+
+
+    <!-- counter  -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- counter  -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+
+
+
+    <!-- slider  -->
+
+
+    <!-- slider  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+    <style type="text/css">
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .slider {
+            width: 100%;
+            margin: 70px auto;
+        }
+
+        .slick-slide {
+            margin: 0px 20px;
+        }
+
+        .slick-slide img {
+            width: 100%;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: black;
+        }
+
+
+        .slick-slide {
+            transition: all ease-in-out .3s;
+
+        }
+
+        .slick-track {
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+
+
+        .slick-dots li button:before {
+            font-family: 'slick';
+            font-size: 12px;
+
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            content: '•';
+            text-align: center;
+            opacity: .25;
+            color: black;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+
+
+
+
+
+        .sliderarrow {
+            transform: rotate(0deg);
+            position: absolute;
+        }
+
+
+
+
+
+
+        @import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+
+
+        .sectionClass {
+            padding: 20px 0px 50px 0px;
+            position: relative;
+            display: block;
+        }
+
+        .fullWidth {
+            width: 100% !important;
+            display: table;
+            float: none;
+            padding: 0;
+            min-height: 1px;
+            height: 100%;
+            position: relative;
+        }
+
+
+        .sectiontitle {
+            background-position: center;
+            margin: 30px 0 0px;
+            text-align: center;
+            min-height: 20px;
+        }
+
+        .sectiontitle h2 {
+            font-size: 30px;
+            color: #222;
+            margin-bottom: 0px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+
+        .headerLine {
+            width: 160px;
+            height: 2px;
+            display: inline-block;
+            background: #ffdc76;
+        }
+
+
+        .projectFactsWrap {
+            display: flex;
+            margin-top: 30px;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+
+        #projectFacts .fullWidth {
+            padding: 0;
+        }
+
+        .projectFactsWrap .item {
+            width: 25%;
+            height: 100%;
+            padding: 50px 0px;
+            text-align: center;
+        }
+
+        .projectFactsWrap .item:nth-child(1) {
+            background: #ffdc76;
+        }
+
+        .projectFactsWrap .item:nth-child(2) {
+            background: #ffdc76;
+        }
+
+        .projectFactsWrap .item:nth-child(3) {
+            background: #ffdc76;
+        }
+
+        .projectFactsWrap .item:nth-child(4) {
+            background: #ffdc76;
+        }
+
+        .projectFactsWrap .item p.number {
+            font-size: 40px;
+            padding: 0;
+            font-weight: bold;
+        }
+
+        .projectFactsWrap .item p {
+            color: black;
+            font-size: 18px;
+            margin: 0;
+            padding: 10px;
+            font-family: 'Open Sans';
+        }
+
+
+        .projectFactsWrap .item span {
+            width: 60px;
+            background: rgba(255, 255, 255, 0.8);
+            height: 2px;
+            display: block;
+            margin: 0 auto;
+        }
+
+
+        .projectFactsWrap .item i {
+            vertical-align: middle;
+            font-size: 50px;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+
+        .projectFactsWrap .item:hover i,
+        .projectFactsWrap .item:hover p {
+            color: black;
+        }
+
+        .projectFactsWrap .item:hover span {
+            background: white;
+        }
+
+        @media (max-width: 786px) {
+            .projectFactsWrap .item {
+                flex: 0 0 50%;
+            }
+        }
+
+        /* AUTHOR LINK */
+
+
+        /* 
+footer p {
+color: black;
+  font-size: 16px;
+  opacity: 0;
+  font-family: 'Open Sans';
+  width: 100%;
+    word-wrap: break-word;
+  line-height: 25px;
+  -webkit-transform: translateX(-200px);
+  transform: translateX(-200px);
+  margin: 0;
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  transition: all 250ms ease;
+} */
+
+        footer .authorWindow a {
+            color: black;
+            text-decoration: none;
+        }
+
+        footer p strong {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .about-me-img {
+            width: 120px;
+            height: 120px;
+            left: 10px;
+            /* bottom: 30px; */
+            position: relative;
+            border-radius: 100px;
+        }
+
+
+
+
+        .authorWindow {
+            width: 600px;
+            background: #75439a;
+            padding: 22px 20px 22px 20px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .authorWindowWrapper {
+            display: none;
+            left: 110px;
+            top: 0;
+            padding-left: 25px;
+            position: absolute;
+        }
+
+
+
+
+
+        .trans {
+            opacity: 1;
+            -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+            -webkit-transition: all 500ms ease;
+            -moz-transition: all 500ms ease;
+            transition: all 500ms ease;
+        }
+
+        @media screen and (max-width: 768px) {
+            .authorWindow {
+                width: 210px;
+            }
+
+            .authorWindowWrapper {
+                bottom: -170px;
+                margin-bottom: 20px;
+            }
+
+            footer p {
+                font-size: 14px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+        .slick-dots li {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0 6px;
+            padding: 0;
+            cursor: pointer;
+        }
+
+
+
+        .slick-dots li button:before {
+            font-family: 'slick';
+            font-size: 12px;
+            /* width: 20px; */
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            background-color: #ffb703;
+
+            height: 8px;
+            content: '' !important;
+            text-align: center;
+            opacity: .25;
+            color: black;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+        }
+
+
+        .slick-dots li.slick-active button:before {
+            opacity: 1;
+            color: black;
+            width: 40px;
+            margin-left: -15px;
+            margin-right: 25px;
+        }
+
+
+        .bar1 {
+            width: 20px;
+            height: 2px;
+            background-color: black;
+        }
+
+
+        .button menu-opened .bar2 {
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header-menu">
+        <div class="container">
+            <div class="header-menu">
+                <nav id='cssmenu'>
+                    <div class="logo"><a href="index.html">
+                            <img src="image/logo.svg" alt="" width="170px">
+                        </a></div>
+                    <div id="head-mobile"></div>
+                    <div class="button"></div>
+                    <ul class="navlist">
+                        <li class='active '><a href='#'>HOME</a></li>
+
+                        <li><a href='#'>About</a>
+                            <ul>
+                                <li><a href='#'>Product 1</a>
+                                    <ul>
+                                        <li><a href='#'>Sub Product</a></li>
+                                        <li><a href='#'>Sub Product</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href='#'>Product 2</a>
+                                    <ul>
+                                        <li><a href='#'>Sub Product</a></li>
+                                        <li><a href='#'>Sub Product</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href='#'>Pages</a>
+                            <ul>
+                                <li><a href='#'>Product 1</a>
+                                    <ul>
+                                        <li><a href='#'>Sub Product</a></li>
+                                        <li><a href='#'>Sub Product</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href='#'>Product 2</a>
+                                    <ul>
+                                        <li><a href='#'>Sub Product</a></li>
+                                        <li><a href='#'>Sub Product</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href='#'>Blog</a>
+                            <ul>
+                                <li><a href='#'>Product 1</a>
+                                    <ul>
+                                        <li><a href='#'>Sub Product</a></li>
+                                        <li><a href='#'>Sub Product</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href='#'>Product 2</a>
+                                    <ul>
+                                        <li><a href='#'>Sub Product</a></li>
+                                        <li><a href='#'>Sub Product</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href='#'>Portfolio</a>
+                            <ul>
+                                <li><a href='#'>Product 1</a>
+                                    <ul>
+                                        <li><a href='#'>Sub Product</a></li>
+                                        <li><a href='#'>Sub Product</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href='#'>Product 2</a>
+                                    <ul>
+                                        <li><a href='#'>Sub Product</a></li>
+                                        <li><a href='#'>Sub Product</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href='#'>CONTACT</a></li>
+
+
+                        <li class="seclogo"><i class="fa fa-search" aria-hidden="true"></i>
+                        </li>
+
+                        <li class="menuicon"><img src="image/menubtn.PNG" alt=""></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="banner">
+                    <div class="row">
+                        <div class="col-lg-7 col-sm-12 col-md-12">
+
+                            <div class="bannerleft">
+
+                                <h1>I'm Giga Miro,
+                                    I am <span class="orange"> Designer</span></h1>
+                                <p>I’m product designer that focuses on solving your
+                                    problems by making a product that will exceed your expectations so far.
+                                </p>
+                                <div class="bannerbtn">
+                                    <a href="#" class="active2">Get Started <span class="roundarrow"><i
+                                                class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
+                                    <a href="#">View Portfolio <span class="roundarrow"><i class="fa fa-arrow-right"
+                                                aria-hidden="true"></i></span></a>
+                                </div>
+                                <div class="round1"></div>
+
+                                <div class="bannerdots">
+                                    <img src="image/dotsimg.PNG" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-sm-12 col-md-12 ">
+
+                            <div class="bannerright">
+                                <img src="image/bannerbg.png" alt="" class="w-100">
+                                <div class="blueround"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="yellowsection">
+            <div class="container">
+                <div class="">
+                    <div id="projectFacts" class="sectionClass">
+                        <div class="fullWidth eight columns">
+                            <div class="projectFactsWrap ">
+                                <div class="item wow fadeInUpBig animated animated" data-number="12"
+                                    style="visibility: visible;">
+
+
+                                    <h2 id="number1" class="display-3 mb-0 number">00</h2>
+                                    <p>Year of experience</p>
+
+                                </div>
+                                <div class="item wow fadeInUpBig animated animated" data-number="55"
+                                    style="visibility: visible;">
+                                    <h2 id="number2" class="display-3 mb-0 number">00</h2>
+                                    <p>Year of experience</p>
+                                </div>
+                                <div class="item wow fadeInUpBig animated animated" data-number="359"
+                                    style="visibility: visible;">
+                                    <h2 id="number3" class="display-3 mb-0 number">00</h2>
+                                    <p>Year of experience</p>
+
+                                </div>
+                                <div class="item wow fadeInUpBig animated animated" data-number="246"
+                                    style="visibility: visible;">
+                                    <h2 id="number4" class="display-3 mb-0 number"></h2>
+                                    <p>Year of experience</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="service">
+                    <div class="mainheading">
+                        <h2>Services I Offer</h2>
+                    </div>
+                    <div class="serviceend">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6 col-md-6">
+                                <div class="card1">
+                                    <div>
+                                        <img src="image/card11.PNG" alt="">
+                                    </div>
+                                    <h4 class="my-4">Branding Design</h4>
+                                    <p>Mauris commodo quis the imperdiet tincidunt.</p>
+                                    <a href="#"> <span class="roundarrow"><i class="fa fa-arrow-right"
+                                                aria-hidden="true"></i></span></a>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6 col-md-6">
+                                <div class="card1">
+                                    <div>
+                                        <img src="image/card12.PNG" alt="">
+                                    </div>
+                                    <h4 class="my-4">UI/UX Design</h4>
+                                    <p>Mauris commodo quis the imperdiet tincidunt.</p>
+                                    <a href="#"> <span class="roundarrow"><i class="fa fa-arrow-right"
+                                                aria-hidden="true"></i></span></a>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6 col-md-6">
+                                <div class="card1">
+                                    <div>
+                                        <img src="image/card13.PNG" alt="">
+                                    </div>
+                                    <h4 class="my-4">Graphic Design</h4>
+                                    <p>Mauris commodo quis the imperdiet tincidunt.</p>
+                                    <a href="#"> <span class="roundarrow"><i class="fa fa-arrow-right"
+                                                aria-hidden="true"></i></span></a>
+                                </div>
+
+
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6 col-md-6">
+                                <div class="card1">
+                                    <div>
+                                        <img src="image/card14.PNG" alt="">
+                                    </div>
+                                    <h4 class="my-4">Web Development</h4>
+                                    <p>Mauris commodo quis the imperdiet tincidunt.</p>
+                                    <a href="#"> <span class="roundarrow"><i class="fa fa-arrow-right"
+                                                aria-hidden="true"></i></span></a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="bg-dark">
+            <div class="container">
+                <div class="skillsouter">
+                    <div class="skills">
+                        <h2>Skills & Experience</h2>
+                    </div>
+
+                    <div class="eediv">
+                        <div class="eemain">
+
+                            <div class="eefirst">
+
+                                <h2>Education</h2>
+
+                                <p class="year">2006</p>
+                                <h3>Bachelor Degree of Design</h3>
+                                <p class="envoto">University of Art & Design</p>
+                            </div>
+
+                            <div class="eefirst">
+
+                                <h2>Experience</h2>
+
+                                <div class="experiencediv">
+                                    <div class=" detailsdiv">
+                                        <p class="year">2022 - PRESENT</p>
+                                        <h3>Product Designer</h3>
+                                        <p class="envoto">Envato LLC</p>
+                                    </div>
+                                    <div class="linkedindiv">
+                                        <p>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i> Details in
+                                                Linkedin</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="eediv">
+                        <div class="eemain">
+
+                            <div class="eefirst mt-5">
+
+
+
+                                <p class="year">2006</p>
+                                <h3>Bachelor Degree of Design</h3>
+                                <p class="envoto">University of Art & Design</p>
+                            </div>
+
+                            <div class="eefirst mt-5">
+
+
+
+                                <div class="experiencediv ">
+                                    <div class=" detailsdiv">
+                                        <p class="year">2022 - PRESENT</p>
+                                        <h3>Product Designer</h3>
+                                        <p class="envoto">Envato LLC</p>
+                                    </div>
+                                    <div class="linkedindiv">
+                                        <p>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i> Details in
+                                                Linkedin</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="eediv ">
+                        <div class="eemain">
+
+                            <div class="eefirst mt-5 border-0">
+
+                                <h2 class="mb-4">My Advantage</h2>
+
+
+                                <div>
+                                    <div class="softwarelogo">
+                                        <div class="softloggoinner">
+                                            <img src="image/softlogo.PNG" alt="">
+                                            <p>14%</p>
+                                        </div>
+                                        <div class="softloggoinner">
+                                            <img src="image/softlogo.PNG" alt="">
+                                            <p>27%</p>
+                                        </div>
+                                        <div class="softloggoinner">
+                                            <img src="image/softlogo.PNG" alt="">
+                                            <p>54%</p>
+                                        </div>
+                                        <div class="softloggoinner">
+                                            <img src="image/softlogo.PNG" alt="">
+                                            <p>90%</p>
+                                        </div>
+                                        <div class="softloggoinner">
+                                            <img src="image/softlogo.PNG" alt="">
+                                            <p>34%</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="eefirst border-0 ">
+
+
+
+                                <div class="experiencediv mt-5">
+                                    <div class=" detailsdiv">
+                                        <p class="year">2022 - PRESENT</p>
+                                        <h3>Product Designer</h3>
+                                        <p class="envoto">Envato LLC</p>
+                                    </div>
+                                    <div class="linkedindiv">
+                                        <p>
+                                            <a href="#"><i class="fa-brands fa-linkedin-in"></i> Details in
+                                                Linkedin</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section>
+            <div class="container">
+                <div class="recent">
+                    <div class="recentheading">
+                        <h2>See My Recent Projects</h2>
+                    </div>
+
+
+
+                    <div id="regular1" class="regular1 slider mainslider">
+                        <div>
+                            <div class="post">
+                                <img src="image/slider2.jpg" alt="" class="w-100">
+
+                            </div>
+                            <div class="post-content">
+                                <div class="slider-contant ">
+                                    <div class="webalyweb">
+                                        <p>Webaly Website</p>
+                                    </div>
+                                    <div class="slider-icon">
+                                        <span><i class="fa fa-arrow-right roundarrowicon "
+                                                aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="post">
+                                <img src="image/slider3.jpg" alt="" class="w-100">
+
+                            </div>
+                            <div class="post-content">
+                                <div class="slider-contant ">
+                                    <div class="webalyweb">
+                                        <p>Webaly Website</p>
+                                    </div>
+                                    <div class="slider-icon">
+                                        <span><i class="fa fa-arrow-right  roundarrowicon"
+                                                aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="post">
+                                <img src="image/slider2.jpg" alt="" class="w-100">
+
+                            </div>
+                            <div class="post-content">
+                                <div class="slider-contant ">
+                                    <div class="webalyweb">
+                                        <p>Webaly Website</p>
+                                    </div>
+                                    <div class="slider-icon">
+                                        <span><i class="fa fa-arrow-right  roundarrowicon"
+                                                aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="post">
+                                <img src="image/slider1.jpg" alt="" class="w-100">
+
+                            </div>
+                            <div class="post-content">
+                                <div class="slider-contant ">
+                                    <div class="webalyweb">
+                                        <p>Webaly Website</p>
+                                    </div>
+                                    <div class="slider-icon">
+                                        <span><i class="fa fa-arrow-right  roundarrowicon"
+                                                aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="post">
+                                <img src="image/slider2.jpg" alt="" class="w-100">
+
+                            </div>
+                            <div class="post-content">
+                                <div class="slider-contant ">
+                                    <div class="webalyweb">
+                                        <p>Webaly Website</p>
+                                    </div>
+                                    <div class="slider-icon">
+                                        <span><i class="fa fa-arrow-right roundarrowicon "
+                                                aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <div class="post">
+                                <img src="image/slider3.jpg" alt="" class="w-100">
+
+                            </div>
+                            <div class="post-content">
+                                <div class="slider-contant ">
+                                    <div class="webalyweb">
+                                        <p>Webaly Website</p>
+                                    </div>
+                                    <div class="slider-icon">
+                                        <span><i class="fa fa-arrow-right  roundarrowicon"
+                                                aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div id="prevArrow">
+                        <span>
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </span>
+                    </div>
+                    <div id="nextArrow">
+                        <span>
+                            <i class="fa-solid fa-arrow-right sliderarrow"></i>
+
+                        </span>
+                    </div>
+
+
+
+                    <div class="pt-4">
+                        <div class="bannerbtn text-center mb-5 ">
+
+                            <a href="#" class="active2">See All Projects <span class="roundarrow "><i
+                                        class="fa fa-arrow-right" aria-hidden="true"></i></span></a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div>
+                    <div class="saying">
+                        <h2>What people’s about saying!</h2>
+                    </div>
+                    <div class="cardsphoto">
+                        <div class="regular slider">
+                            <div>
+                                <div class="photocard1">
+                                    <div class="photocardfirstdiv mb-2">
+                                        <div class="photoandname">
+                                            <div>
+                                                <img src="image/cardphoto.PNG" alt="" class="">
+                                            </div>
+                                            <div class="photocarddetails">
+
+                                                <h5>Mark Agroiks</h5>
+                                                <p class="ceo">CEO, Agrok Inc</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <img src="image/cardicon.PNG" alt="" class="mt-3">
+                                        </div>
+
+                                    </div>
+                                    <p class="photocardmainpara">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                        elit. Natus porro
+                                        itaque vero similique ducimus velit reprehenderit aliquid, ullam quibusdam minus
+                                        dolor. !</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="photocard1">
+                                    <div class="photocardfirstdiv mb-2">
+                                        <div class="photoandname">
+                                            <div>
+                                                <img src="image/cardphoto.PNG" alt="" class="">
+                                            </div>
+                                            <div class="photocarddetails">
+
+                                                <h5>Mark Agroiks</h5>
+                                                <p class="ceo">CEO, Agrok Inc</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <img src="image/cardicon.PNG" alt="" class="mt-3">
+                                        </div>
+
+                                    </div>
+                                    <p class="photocardmainpara">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                        elit. Natus porro
+                                        itaque vero similique ducimus velit reprehenderit aliquid, ullam quibusdam minus
+                                        dolor. !</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="photocard1">
+                                    <div class="photocardfirstdiv mb-2">
+                                        <div class="photoandname">
+                                            <div>
+                                                <img src="image/cardphoto.PNG" alt="" class="">
+                                            </div>
+                                            <div class="photocarddetails">
+
+                                                <h5>Mark Agroiks</h5>
+                                                <p class="ceo">CEO, Agrok Inc</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <img src="image/cardicon.PNG" alt="" class="mt-3">
+                                        </div>
+
+                                    </div>
+                                    <p class="photocardmainpara">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                        elit. Natus porro
+                                        itaque vero similique ducimus velit reprehenderit aliquid, ullam quibusdam minus
+                                        dolor. !</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="photocard1">
+                                    <div class="photocardfirstdiv mb-2">
+                                        <div class="photoandname">
+                                            <div>
+                                                <img src="image/cardphoto.PNG" alt="" class="">
+                                            </div>
+                                            <div class="photocarddetails">
+
+                                                <h5>Mark Agroiks</h5>
+                                                <p class="ceo">CEO, Agrok Inc</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <img src="image/cardicon.PNG" alt="" class="mt-3">
+                                        </div>
+
+                                    </div>
+                                    <p class="photocardmainpara">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                        elit. Natus porro
+                                        itaque vero similique ducimus velit reprehenderit aliquid, ullam quibusdam minus
+                                        dolor. !</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="photocard1">
+                                    <div class="photocardfirstdiv mb-2">
+                                        <div class="photoandname">
+                                            <div>
+                                                <img src="image/cardphoto.PNG" alt="" class="">
+                                            </div>
+                                            <div class="photocarddetails">
+
+                                                <h5>Mark Agroiks</h5>
+                                                <p class="ceo">CEO, Agrok Inc</p>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <img src="image/cardicon.PNG" alt="" class="mt-3">
+                                        </div>
+
+                                    </div>
+                                    <p class="photocardmainpara">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                        elit. Natus porro
+                                        itaque vero similique ducimus velit reprehenderit aliquid, ullam quibusdam minus
+                                        dolor. !</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section>
+            <div class="container">
+                <div>
+                    <div class="flipicon">
+
+                        <div class="flipiconmain">
+                            <img src="image/flipicon1.png" alt="" class="w-100">
+                        </div>
+                        <div class="flipiconmain">
+                            <img src="image/flipicon2.png" alt="" class="w-100">
+                        </div>
+                        <div class="flipiconmain">
+                            <img src="image/flipicon3.png" alt="" class="w-100">
+                        </div>
+                        <div class="flipiconmain">
+                            <img src="image/flipicon4.png" alt="" class="w-100">
+                        </div>
+                        <div class="flipiconmain">
+                            <img src="image/flipicon5.png" alt="" class="w-100">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="blogsection">
+            <div class="container">
+                <div class="blogmain pt-lg-5">
+                    <div class="blogandarticle pb-lg-5">
+                        <h2>Blog & article</h2>
+                        <a href="#">SEE ALL POST</a>
+                    </div>
+
+                    <div class="blogouter">
+                        <div class="blogimageanddetails">
+                            <div class="blogimage">
+                                <img src="image/blogimg1.jpg" alt="" class="w-100">
+                            </div>
+                            <div class="blogtext">
+                                <p>Video Production</p>
+                                <div class="textline"></div>
+                                <h2>Common wordpress blocks and top block builders</h2>
+                                <a href="#">Read More <span><i class="fa fa-arrow-right "
+                                            aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+
+                        <div class="divdivide"></div>
+                        <div class="blogimageanddetails">
+                            <div class="blogimage">
+                                <img src="image/blogimg2.jpg" alt="" class="w-100">
+                            </div>
+                            <div class="blogtext">
+                                <p>Video Production</p>
+                                <div class="textline"></div>
+                                <h2>How to apply maximalist design to a small living space</h2>
+                                <a href="#">Read More <span><i class="fa fa-arrow-right "
+                                            aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+
+                        <div class="divdivide"></div>
+                        <div class="blogimageanddetails">
+                            <div class="blogimage">
+                                <img src="image/blogimg3.jpg" alt="" class="w-100">
+                            </div>
+                            <div class="blogtext">
+                                <p>Video Production</p>
+                                <div class="textline"></div>
+                                <h2>15 Clever color combinations that make your presentation</h2>
+                                <a href="#">Read More <span><i class="fa fa-arrow-right "
+                                            aria-hidden="true"></i></span></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class=" letstalk">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-12 col-md-12">
+                            <div class="curabitur">
+                                <h2>Let’s talk <br>
+                                    about your project</h2>
+
+                                <p class="velit">Curabitur vitae nunc sed velit dignissim sodales. Urna neque viverra
+                                    justo nec.
+                                    In cursus massa tincidunt ut ornare the butter leo integer.
+                                </p>
+                                <div class="maildetail mt-4">
+                                    <div>
+                                        <img src="image/emailimg.PNG" alt="">
+                                    </div>
+                                    <div class="emailmain">
+                                        <p>Email:</p>
+                                        <h2>hello@yourmail.com</h2>
+                                    </div>
+                                </div>
+
+                                <div class="maildetail mt-4">
+                                    <div>
+                                        <img src="image/emailimg.PNG" alt="">
+                                    </div>
+                                    <div class="emailmain">
+                                        <p>Phone:</p>
+                                        <h2>(00)1234567</h2>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                        <div class="col-lg-6 col-sm-12 col-md-12">
+
+                            <div>
+                                <div class="formouter">
+                                    <form action="">
+                                        <label for="name">Name</label><br>
+                                        <input type="text" placeholder="Enter Your Email"><br>
+                                        <label for="email">Email</label><br>
+                                        <input type="email" placeholder="Enter your email address"><br>
+                                        <label for="text">How can we help you?</label><br>
+                                        <textarea name="text" id="" cols="30" rows="2"
+                                            placeholder="Type your message here"></textarea><br>
+                                        <button>Submit Now<span> <i class="fa fa-arrow-right rotetearrow "
+                                                    aria-hidden="true"></i></span></button>
+
+                                    </form>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <footer class="footersection">
+        <section>
+            <div class="container">
+                <div class="footerfirstmain">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12 col-md-12">
+                            <div class=" footerpartfirst text-white">
+                                <div>
+                                    <img src="image/footerlogo.PNG" alt="">
+                                </div>
+                                <p class="weekly">You will get weekly update on Email</p>
+                                <form action="">
+                                    <input type="email" placeholder="Email Address" class="lastinput">
+                                    <button class="sub">Subscribe</button>
+                                </form>
+
+                                <div class="sociallogo">
+                                    <span><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span>
+                                    <span><a href="#"><i class="fa-brands fa-twitter"></i></a></span>
+                                    <span><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></span>
+                                    <span><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></span>
+                                    <span><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-sm-6 col-md-6 col-6">
+
+                            <div class=" footerpartsec text-white">
+
+                                <h2>Services</h2>
+                                <ul>
+                                    <li><a href="#">Digital Marketing</a></li>
+                                    <li><a href="#">Video Production</a></li>
+                                    <li><a href="#">Digital Marketing</a></li>
+                                    <li><a href="#">Web Development</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-6 col-md-6 col-6">
+                            <div class="footerpartsec text-white">
+
+                                <h2>Resources</h2>
+                                <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Portfolio Two Column</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-md-12">
+
+                            <div class=" footerpartlast text-white">
+
+                                <h2>Information</h2>
+                                <ul>
+                                    <li>Riverside 255,<br>
+                                        San Francisco, USA</li>
+                                    <li>(123)0987654</li>
+                                    <li>hello@yourmail.com</li>
+                                    <li>www.yourwebsite.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divdivide2 mb-0"></div>
+            </div>
+
+
+
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="copyfooter">
+                    <div class="copyrightpara">
+                        <p>© 2022 Swipy. Designed By RSTheme.</p>
+                    </div>
+                    <div class="d-flex lastlist">
+                        <ul>
+                            <li><a href="#">About Me</a></li>
+                            <li class="rounddot"></li>
+
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+    <!-- slick slider  -->
+
+
+
+
+    <script src="./js/app.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    <script>
+
+    </script>
+
+
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        $('#regular1').slick({
+            dots: true,
+            arrows: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            prevArrow: '#prevArrow',
+            nextArrow: '#nextArrow',
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 2,
+
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+
+    </script>
+    <script type="text/javascript">
+        $('.regular').slick({
+            dots: true,
+            infinite: false,
+            speed: 300,
+            arrows: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+
+            ]
+        });
+
+
+    </script>
+
+</body>
+
+</html>
